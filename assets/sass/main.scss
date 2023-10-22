@@ -1,0 +1,77 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+/*npm run sass-watch*/
+/*@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@100;400&display=swap" rel="stylesheet'); */
+
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+// A revoir
+
+
+
+
+/* police  utiliser*/
+.Redressed-Regular{
+    font-family: 'Redressed-Regular',serif;
+}
+
+/* changer le menu*/
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55) ;
+    font-family:'Redressed-Regular';
+    src:url('../font/Redressed-Regular.ttf') format('truetype');
+    /*rajouter une ligne blanche sur le bas de nav*/
+    box-shadow: 1px 1px rgba(255,255,255,0.54);
+    
+    /* pour mettre la nav au dessus au moment du scrol*/
+     z-index: 99;
+}
+
+/* effet sur les menu*/
+.cc-navbar .nav-link{
+    /* Ajout ligne en dessous mais transparent jusqu'à hover*/
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+/* effet sur les menu*/
+.cc-navbar .nav-link:hover{
+    padding-bottom: 15px;
+    /* border bottom devient vert*/
+    border-bottom-color: var(--bs-teal);
+}
+
+/* le bouton Passer la commande*/
+.btn-order{
+
+    /*bs-teal couleur native bootstrap*/
+    color: var(--bs-teal);
+    border-color:var(--bs-teal) ;
+    transition: 0.5s;
+}
+
+/* effet sur le hover*/
+.btn-order:hover{
+    color: white;
+    background-color: var(--bs-teal);
+
+}
+
+/* la section*/
+.banner{
+    /* fixer et centrer la photo */
+    
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('../img/gta_decors1.jpg') center center fixed no-repeat;
+   /* cover->la photo va prendre toute la place*/
+    background-size: cover;
+    /* h900 -> ajouter une hauter de 900px*/
+    height: 800px;
+}
+
+.banner .banner-desc{
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+
+}
+
+   
